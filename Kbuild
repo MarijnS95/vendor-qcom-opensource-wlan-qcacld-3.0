@@ -3303,6 +3303,7 @@ ccflags-y += -Wframe-larger-than=4096
 endif
 endif
 ccflags-y += -Wmissing-prototypes
+ccflags-y += -Wno-error=stringop-overflow
 
 ifeq ($(call cc-option-yn, -Wheader-guard), y)
 ccflags-y += -Wheader-guard
